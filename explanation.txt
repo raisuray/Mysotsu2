@@ -1,0 +1,13 @@
+環境を整える
+$ pip3 install -r ./env-list.txt
+
+Patent class のオブジェクトを作る
+$ python3 newPatentProg.py 
+
+発明の効果から効果語らしいの抽出
+$ python3 hatsu.py
+（フィルタ前と後の結果が out フォルダにでる. それぞれは out2-invention.json と out2-invention-filtered.json）
+
+実施例から効果語らしいの抽出
+$ python3 experiment.py 
+（フィルタ前と後の結果が out フォルダにでる. それぞれは out-experiment.json と out-experiment-filtered.json）
