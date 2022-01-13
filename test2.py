@@ -6,10 +6,10 @@ import numpy as np
 
 nlp = spacy.load('ja_ginza')
 
-koukago_inv = load_jsonfile("all_koukago_from_hatsumei.json")
-koukago_exp = load_jsonfile("all_koukago_from_jisshirei.json")
+koukago_inv = load_jsonfile("all_koukago_from_hatsumei_wikipedia.json")
+koukago_exp = load_jsonfile("all_koukago_from_jisshirei_wikipedia.json")
 patent_list =  load_picklefile("patent_new.object")
-distance = load_jsonfile("distance_T.json")
+distance = load_jsonfile("distance_T_wikipedia.json")
 
 patent_name =  list(koukago_exp.keys())
 

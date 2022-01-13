@@ -15,7 +15,8 @@ def is_same(word1, word2):
 my_inv    = load_jsonfile("all_koukago_from_hatsumei.json")
 kaede_inv = load_jsonfile("kaede_result.json")
 
-wv = KeyedVectors.load('./patent_w2v_iter5.model')
+#wv = KeyedVectors.load('./patent_w2v_iter5.model')
+wv = KeyedVectors.load_word2vec_format('./wiki.vec.pt', binary=True)
 print("LOAD SUCCESS")
 
 out = load_jsonfile("template.json")
